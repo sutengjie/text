@@ -1,0 +1,31 @@
+.breadcrumb li {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.breadcrumb .split {
+    color: #999999;
+}
+.weibu{
+    background-color: #2a2730;
+}
+.weibu ul{
+    padding: 25px 0;
+}
+.weibu li{
+    display: inline-block;
+    color: #fff;
+    padding-right: 10px;
+}
+.weibu p{
+    color: #999;
+    line-height: 18px;
+}
+.weibu .weibu-miaoshu{
+    margin-bottom: 20px;
+}
+@media (max-width: 768px){
+    .weibu h4,.weibu p,.weibu .weibu-nav{
+    text-align: center;
+    }
+}

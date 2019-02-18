@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>无人机厂家网站-无人机厂家网页</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/clean.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet/less" href="css/product.less">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script type="text/javascript" src="js/less.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+<header>
+    <nav class="nav  navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <!--在移动端的时候导航条折叠起来，三横的样式出现，点击该样式可以显示或隐藏导航条上的内容-->
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="navbar-brand" src="img/1532677512.png">
+            </div>
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">网站首页</a></li>
+                    <li class="active"><a href="#">产品展示</a></li>
+                    <li><a href="#">应用行业</a></li>
+                    <li><a href="#">服务支持</a></li>
+                    <li><a href="#">新闻资讯</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<style>
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .fenglei {
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .fenglei .clearfix {
+        text-align: center;
+    }
+
+    .fenglei .clearfix li {
+        display: inline-block;
+    }
+
+    .fenglei .clearfix li a {
+        font-size: 16px;
+        display: block;
+        margin: 0 5px;
+        height: 75px;
+        line-height: 75px;
+        padding: 0 20px;
+        font-weight: 300;
+        transition: all .6s;
+    }
+
+    .fenglei .clearfix li:first-child a {
+        color: #11ceeb;
+    }
+
+    .fenglei .clearfix li:hover a {
+        color: #11ceeb;
+    }
+
+    .fenglei .product-search {
+        margin: 0 auto;
+        max-width: 500px;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    .fenglei .product-search form {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .fenglei .product-search input {
+        width: 100%;
+        font-size: 1rem;
+        display: block;
+        color: #76838f;
+        border: 1px solid #e4eaec;
+        line-height: 1.571429;
+        padding: .429rem .929rem;
+        padding-right: 50px;
+    }
+
+    .fenglei .product-search button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0 10px;
+    }
+
+    .mian-product .cuisine {
+        position: relative;
+        color: #999;
+        padding: 15px 0;
+        border-bottom: 1px solid #e4eaec;
+    }
+
+    .mian-product .cuisine::before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 18px;
+        background: #11ceeb;
+        position: absolute;
+    }
+
+    .mian-product .cuisine b {
+        font-size: 18px;
+        color: #000000;
+        margin-right: 15px;
+        position: relative;
+        top: -2px;
+        padding-left: 15px;
+        font-weight: 700;
+    }
+
+    .mian-product .img img {
+        border: 0;
+        display: block;
+        width: 100%;
+        transition: ease .65s;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .mian-product ul {
+        overflow: hidden;
+        margin:  10px 0;
+        padding: 10px 0;
+    }
+
+    .mian-product ul li {
+        padding: 10px;
+    }
+
+    .mian-product ul li p {
+        color: #000000;
+        max-width: 75%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .mian-product ul li h2 {
+        font-size: 16px;
+        color: #333;
+        margin-top: 15px;
+        position: relative;
+        padding: 0 5px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .mian-product ul li h3 {
+        font-size: 100%;
+        margin-top: 10px;
+        color: #999999;
+        padding: 0 5px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .mian-product li h2 span {
+        position: absolute;
+        right: 5px;
+        top: 0;
+        font-size: 14px;
+        color: #CDCDCD;
+        font-style: normal;
+    }
+
+    .mian-product li h2 span em {
+        font-style: normal;
+        font-size: 12px;
+        position: relative;
+        left: -20px;
+        transition: ease .65s;
+        opacity: 0;
+    }
+
+    .mian-product li h2 span i {
+        transition: ease .65s;
+    }
+
+    .mian-product li h2 span b {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #999999;
+        position: absolute;
+        right: 17px;
+        top: 0;
+        transition: ease .65s;
+    }
+
+    .mian-product ul li a:after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 1px;
+        background: #11ceeb;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        transition: ease .65s;
+    }
+</style>
+<div class="slick-slide">
+    <img src="img/1532679237.jpg">
+</div>
+<div class="fenglei">
+    <div class="container">
+        <div class="row">
+            <div class="clearfix">
+                <ul>
+                    <li><a class="active" href="#">全部</a></li>
+                    <li><a href="#">多旋翼无人机</a></li>
+                    <li><a href="#">固翼无人机</a></li>
+                </ul>
+            </div>
+            <div class="product-search">
+                <form action="#">
+                    <input type="text" placeholder="search"/>
+                    <button><i class="glyphicon glyphicon-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mian-product">
+    <div class="container">
+        <h2 class="cuisine"><b>产品展示</b></h2>
+        <ul>
+            <li class="col-md-3">
+                <a>
+                    <div class="img">
+                        <img src="img/g1.jpg">
+                    </div>
+                    <h2>
+                        <p>固定翼无人机滑翔手机遥控自动返航</p>
+                        <span href="##">
+                            <em>MORE</em>
+                            <b></b>
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </span>
+                    </h2>
+                    <h3>配合高性能4K航拍相机，在无人机稳定飞行下，以120FPS拍摄4K高清视频，捕捉...</h3>
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a>
+                    <div class="img">
+                        <img src="img/g1.jpg">
+                    </div>
+                    <h2>
+                        <p>固定翼无人机滑翔手机遥控自动返航</p>
+                        <span href="##">
+                            <em>MORE</em>
+                            <b></b>
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </span>
+                    </h2>
+                    <h3>配合高性能4K航拍相机，在无人机稳定飞行下，以120FPS拍摄4K高清视频，捕捉...</h3>
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a>
+                    <div class="img">
+                        <img src="img/g1.jpg">
+                    </div>
+                    <h2>
+                        <p>固定翼无人机滑翔手机遥控自动返航</p>
+                        <span href="##">
+                            <em>MORE</em>
+                            <b></b>
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </span>
+                    </h2>
+                    <h3>配合高性能4K航拍相机，在无人机稳定飞行下，以120FPS拍摄4K高清视频，捕捉...</h3>
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a>
+                    <div class="img">
+                        <img src="img/g1.jpg">
+                    </div>
+                    <h2>
+                        <p>固定翼无人机滑翔手机遥控自动返航</p>
+                        <span href="##">
+                            <em>MORE</em>
+                            <b></b>
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </span>
+                    </h2>
+                    <h3>配合高性能4K航拍相机，在无人机稳定飞行下，以120FPS拍摄4K高清视频，捕捉...</h3>
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a>
+                    <div class="img">
+                        <img src="img/g1.jpg">
+                    </div>
+                    <h2>
+                        <p>固定翼无人机滑翔手机遥控自动返航</p>
+                        <span href="##">
+                            <em>MORE</em>
+                            <b></b>
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </span>
+                    </h2>
+                    <h3>配合高性能4K航拍相机，在无人机稳定飞行下，以120FPS拍摄4K高清视频，捕捉...</h3>
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a>
+                    <div class="img">
+                        <img src="img/g1.jpg">
+                    </div>
+                    <h2>
+                        <p>固定翼无人机滑翔手机遥控自动返航</p>
+                        <span href="##">
+                            <em>MORE</em>
+                            <b></b>
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </span>
+                    </h2>
+                    <h3>配合高性能4K航拍相机，在无人机稳定飞行下，以120FPS拍摄4K高清视频，捕捉...</h3>
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a>
+                    <div class="img">
+                        <img src="img/g1.jpg">
+                    </div>
+                    <h2>
+                        <p>固定翼无人机滑翔手机遥控自动返航</p>
+                        <span href="##">
+                            <em>MORE</em>
+                            <b></b>
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </span>
+                    </h2>
+                    <h3>配合高性能4K航拍相机，在无人机稳定飞行下，以120FPS拍摄4K高清视频，捕捉...</h3>
+                </a>
+            </li>
+            <li class="col-md-3">
+                <a>
+                    <div class="img">
+                        <img src="img/g1.jpg">
+                    </div>
+                    <h2>
+                        <p>固定翼无人机滑翔手机遥控自动返航</p>
+                        <span href="##">
+                            <em>MORE</em>
+                            <b></b>
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </span>
+                    </h2>
+                    <h3>配合高性能4K航拍相机，在无人机稳定飞行下，以120FPS拍摄4K高清视频，捕捉...</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--尾部-->
+<div class="weibu">
+    <div class="container">
+        <div class="weibu-nav">
+            <ul>
+                <li>产品展示</li>
+                <li>应用行业</li>
+                <li>服务支持</li>
+                <li>新闻资讯</li>
+                <li>关于我们</li>
+            </ul>
+        </div>
+        <div class="weibu-miaoshu">
+            <p>Designed and built with all the love in the world by @mdo and @fat. Maintained by the core team with the
+                help of our contributors.</p>
+            <p>本站由个人独立开发，仅供个人作品展示。</p>
+        </div>
+    </div>
+</div>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,558 @@
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+
+.among {
+  text-align: center;
+}
+
+.boxspacing {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  max-height: 40px;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.carousel-indicators img {
+  width: 100px;
+  height: 50px;
+}
+
+.carousel-indicators li {
+  background-color: #999999;
+  border: 1px solid #999999;
+  margin: 0 auto;
+}
+
+.carousel-indicators .active {
+  background-color: #0f0f0f;
+  border: 1px solid #0f0f0f;
+  width: 10px;
+  height: 10px;
+}
+
+#yanshi {
+  background-color: #11ceeb;
+
+  p {
+    color: #ffffff;
+  }
+
+  i {
+    display: block;
+  }
+}
+
+.Product-title {
+  height: 35px;
+  font-size: 36px;
+  line-height: 30px;
+  color: #0f0f0f;
+  position: relative;
+  .among();
+}
+
+.Product-title::after {
+  background: none repeat scroll 0 0;
+  background-color: #11ceeb;
+  content: "";
+  height: 3px;
+  width: 2%;
+  left: 50%;
+  top: 40px;
+  margin-left: -1%;
+  position: absolute;
+}
+
+.Product {
+  margin-top: 20px;
+  .among();
+}
+
+.classify {
+  display: flex;
+}
+
+.classify .duoduo {
+  background-color: #cccccc;
+  width: 45%;
+  padding: 30px;
+  margin: 10px 2.5%;
+}
+
+.classify li .tu {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+}
+
+.classify li .tu img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.classify .Product-mian {
+  padding-bottom: 20px;
+  border-bottom: 1px #ffffff solid;
+  height: 162px;
+}
+
+.classify .Product-duoduo {
+  width: 65%;
+  float: right;
+}
+
+.classify .Product-duoduo p {
+  display: block;
+  height: 95px;
+  overflow: hidden;
+}
+
+
+.classify .duoduo i {
+  display: none;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #11ceeb;
+  position: relative;
+  top: 40px;
+  left: 47%;
+  overflow: hidden;
+}
+
+.classify li h2 {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.classify li p {
+  font-size: 13px;
+  color: #f0f0f0;
+  line-height: 16px;
+}
+
+.classify .zhushi {
+  margin: 20px 0;
+}
+
+.classify .zhushi p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tabulation {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.tabulation .card {
+  margin-bottom: 0;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tabulation .card a {
+  margin: auto auto;
+}
+
+.tabulation .card .cover {
+  border-bottom: none;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.tabulation .card .cover:hover {
+  transform: scale(1.5);
+}
+
+.tabulation .card img {
+  width: 100%;
+  height: 100%;
+}
+
+.tabulation .card .card-title {
+  border-top: 1px solid #e7e7e7;
+  background-color: #11ceeb;
+  padding: 12px 20px;
+  color: #ffffff;
+  .among();
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  position: relative;
+}
+
+.background {
+  background: url("../img/1532672100.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.container-mian {
+  padding: 0;
+}
+
+#index-video {
+  max-width: 100%;
+}
+
+.bakc {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.video-play {
+  background-image: url("../img/play.png");
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.about .section-title {
+  font-size: 35px;
+  color: #0f0f0f;
+  font-weight: 400;
+  padding-bottom: 22px;
+}
+
+.about .subp {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.about .default-btn {
+  border: 1px solid #11ceeb;
+  color: #11ceeb;
+  display: inline-block;
+  font-size: 10px;
+  margin-top: 25px;
+  overflow: hidden;
+  padding: 5px 15px;
+  position: relative;
+  z-index: 9;
+  background: #ffffff;
+  transition: .3s;
+}
+
+.about .default-btn:hover {
+  background-color: #11ceeb;
+  color: #ffffff;
+}
+
+.about .video-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.row .title {
+  .among();
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.row .title::after {
+  content: '';
+  display: block;
+  margin: 25px auto 0px;
+  width: 10%;
+  height: 5px;
+  background: #11ceeb;
+}
+
+.row ul {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.row ul li {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.row ul li img {
+  width: 100%;
+}
+
+.row figure {
+  position: relative;
+}
+
+.row figcaption {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #ffffff;
+  .among();
+  transition: 0.4s;
+}
+
+.row li:hover figcaption {
+  margin-top: 15px;
+  margin-left: 15px;
+  opacity: 1;
+}
+
+.row figcaption h3 {
+  margin-top: 10%;
+  color: #000000;
+  font-size: 25px;
+}
+
+.row figcaption span {
+  margin-top: 15px;
+  color: #999999;
+  display: inline-block;
+}
+
+.row figcaption a {
+  margin-top: 30px;
+  .among();
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #11ceeb;
+  color: #ffffff;
+}
+
+.information .titlebox {
+  float: left;
+}
+
+.information .titlebox .title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  float: left;
+}
+
+.information .titlebox div {
+  float: left;
+}
+
+.information .titlebox p {
+  font-size: 15px;
+  line-height: 28px;
+  color: #999999;
+}
+
+.information .titlebox .secondtitle {
+  font-size: 20px;
+  color: #999999;
+}
+
+.information .morebox {
+  float: right;
+  margin-top: 10px;
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+
+.information .morebox a {
+  padding: 10px 15px;
+  border: 1px solid #11ceeb;
+  color: #11ceeb;
+  display: block;
+  .among();
+}
+
+.information .morebox:hover {
+  background-color: #11ceeb;
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.clearfix li {
+  margin-bottom: 14px;
+  overflow: hidden;
+  height: 96.5px;
+}
+
+.clearfix .timelist {
+  width: 13%;
+  display: inline-block;
+  float: left;
+  .among();
+  background: #99e3f0;
+  padding: 5px 0;
+}
+
+.clearfix .timelist .day {
+  font-size: 52px;
+  color: #ffffff;
+}
+
+.clearfix .timelist .time {
+  color: #fff;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.clearfix .contantlist {
+  width: 87%;
+  display: inline-block;
+  background-color: #ccc;
+  height: 100%;
+  padding: 15px 0 0 30px;
+  transition: 0.5s;
+}
+
+.clearfix .contantlist h4 {
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.clearfix .contantlist span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+  color: #999999;
+  font-size: 15px;
+  line-height: 22px;
+  display: inline-block;
+  margin-bottom: 19px;
+}
+
+.clearfix .contantlist:hover {
+  background-color: #11ceeb;
+  color: #ffffff;
+
+  span {
+    color: #ffffff;
+  }
+}
+
+
+/* 大屏幕（大桌面显示器，小于等于 1200px） */
+@media (max-width: @screen-lg-min) {
+  .about .section-title {
+    font-size: 30px;
+  }
+
+  .about .subp {
+    font-size: 12px;
+  }
+
+  .about .section-title {
+    padding-bottom: 15px;
+  }
+
+  .about .default-btn {
+    margin-top: 10px;
+  }
+}
+
+/* 中等屏幕（桌面显示器，小于等于 992px） */
+@media (max-width: @screen-md-min) {
+  .about-content {
+    margin-top: 11px;
+  }
+
+  .clearfix .timelist {
+    width: 20%;
+  }
+
+  .clearfix .contantlist {
+    width: 80%;
+  }
+}
+
+/* 超小屏幕（手机，小于 768px） */
+/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+/* 小屏幕（平板，小于等于 768px） */
+@media (max-width: @screen-sm-min) {
+  .classify .duoduo {
+    padding: 0px;
+  }
+
+  .classify .Product-mian {
+    padding-bottom: 20px;
+    border: none;
+    height: 0px;
+  }
+
+  .classify .Product-duoduo {
+    width: auto;
+    float: none;
+    .among();
+  }
+
+  .classify .duoduo i {
+    top: 10px;
+    left: 43%;
+  }
+
+  .information .titlebox .title {
+    font-size: 40px;
+  }
+
+  .information .titlebox .secondtitle {
+    font-size: 16px;
+  }
+
+  .information .titlebox p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .information .morebox {
+    margin-top: 5px;
+  }
+
+  .clearfix .timelist {
+    width: 30%;
+  }
+
+  .clearfix .contantlist {
+    width: 70%;
+  }
+
+  .clearfix .timelist .time {
+    font-size: 15px;
+  }
+
+  .weibu h4, .weibu p, .weibu .weibu-nav {
+    .among();
+  }
+
+  .hidd {
+    display: none !important;
+  }
+}
